@@ -35,6 +35,8 @@ jobs:
           destination: ./_site
       - name: Upload Pages artifact
         uses: paper-spa/upload-pages-artifact@review-pass
+        with:
+          retention-days: 2
   deploy:
     environment: 
       name: github-pages
